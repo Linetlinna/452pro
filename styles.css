@@ -1,0 +1,239 @@
+ /* Linet(Lin Na)*/ 
+ body {  
+    font-family: Arial, sans-serif;  
+    color: #fff;  
+    background-color: #7f7d7d;  
+    margin: 0;  
+    padding: 0;  
+  }  
+  
+  .container {  
+     
+    margin: 0 auto;  
+    padding: 20px;  
+  }  
+  
+  header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  /*Vertically aligned*/
+    margin-bottom: 20px;  /*Set the bottom margin to 20 pixels */
+  }  
+  
+  .logo {  
+      
+    flex-shrink: 0;  
+    margin-right: 10px; 
+}
+.logo img {  
+    max-width: 10%;  
+    height: auto; /* Picture height automatically to fit width */
+}   
+  
+  nav ul {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+  }  
+  
+  nav ul li {  
+    margin-left: 10px;  
+  }  
+  
+  nav ul li a {  
+    text-decoration: none;  
+    color: #fff;  
+    font-size: 16px;  
+  }  
+  
+  .main-content {  
+    margin-bottom: 20px;  
+  }  
+  
+  .main-content h2 {  
+    text-align: right;  
+  }  
+  
+  .products {  
+    display: flex;  
+    justify-content: space-around;  
+    align-items: center;  
+    margin-top: 120px;  
+  }  
+  
+  .product-icon {  
+    font-size: 24px;  
+    margin-right: 10px;  
+  }  
+  
+  .footer {  
+    text-align: center;  
+    font-size: 17px;  
+    color: #f9f5f5;
+    background-color: #101010;
+    padding: 1px 0;  
+  }  
+  
+   
+  .bordered-paragraph {  
+        border: 3px solid #ece256;/* Set the border to 1 pixel wide, solid line, black */  
+        padding: 20px; /* Adds margins to avoid text sticking directly to the border */  
+        margin-bottom: 20px; /* Add a lower margin to separate it from other content */  
+        position: absolute; 
+        right: 10;
+        width: 500px;  
+        height: 130px; 
+        box-sizing: border-box;  
+        top:640px;
+    }  
+    .clearfix::after {  
+        content: "";  
+        display: table;  
+        clear: both;  
+    }  
+ 
+
+
+h1 {  
+  margin: 0;  
+}  
+
+main {  
+  padding: 20px;  
+}  
+
+.support {  
+  margin-bottom: 20px;  
+}  
+
+.question, .want-product {  
+  margin-bottom: 10px;  
+}  
+
+.contact-methods {  
+  margin-top: 20px;  
+}  
+
+.contact-methods button {  
+  margin-right: 10px;  
+  padding: 10px 20px;  
+}  
+
+.contact-us {  
+  background-color: #f2f2f2;
+  padding: 20px;  
+  text-align: center;  
+  color: black;
+}  
+.search-container {  
+display: inline-flex; 
+align-items: center; /* Vertical center */
+max-width: 600px;
+margin: 0 auto;/* Horizontal center */
+}  
+
+#search-input {  
+flex: 1;   
+padding: 10px;  
+border: 1px solid #ccc;  
+border-radius: 4px 0 0 4px;
+font-size: 16px;  
+transition: border-color 0.2s ease-in-out;   
+}  
+
+#search-input:focus {  
+border-color: #4CAF50; 
+outline: none;  
+}  
+
+#search-button {  
+padding: 10px 20px;  
+border: 1px solid #4CAF50;  
+border-radius: 0 4px 4px 0;  
+background-color: #4CAF50;  
+color: white;  
+cursor: pointer;  
+transition: background-color 0.2s ease-in-out; 
+}
+
+#search-button:hover {  
+background-color: #45a049; 
+}  
+
+
+.contact-methods {  
+display: flex;  
+flex-wrap: wrap;
+justify-content: space-around; 
+}  
+
+.contact-methods > div {  
+flex: 0 0 23%; 
+margin: 1%; 
+text-align: center;
+}  
+
+
+@media (max-width: 600px) {
+.contact-methods > div {  
+  flex: 0 0 48%; 
+}
+}
+
+.about img {  
+  display: block; 
+  margin: 0 auto; 
+}
+.aboutus {  
+  background-color: #fdef57;
+  padding: 20px;  
+  text-align: center;  
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px; 
+  border-width: 10px; 
+  border-style: solid;
+  border-color: #89f970; 
+  font-size: 24px;
+  border-top-left-radius: 20px;  
+  border-top-right-radius: 10px;  
+  border-bottom-right-radius: 10px;  
+  border-bottom-left-radius: 20px; 
+} 
+
+.new h1 {  
+  text-align: center;  
+}
+
+
+.image-box {  
+  width: 420px; 
+  height: 420px; 
+  overflow: hidden; 
+  position: relative; 
+  display: inline-block; 
+  margin: 10px; 
+}  
+
+.image-box img {  
+  width: 100%;  
+  height: auto;  
+}  
+
+.tooltiptext {  
+   
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  width: 100%;  
+  background-color: rgba(0, 0, 0, 0.6);  
+  color: white;  
+  padding: 5px;  
+  text-align: center;  
+  display: none; 
+}  
+
+/* Added mouse hover effect to display tooltiptext */
+.image-box:hover .tooltiptext {  
+  display: block;  
+}  
